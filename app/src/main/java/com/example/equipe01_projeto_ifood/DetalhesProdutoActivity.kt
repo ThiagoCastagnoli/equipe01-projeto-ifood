@@ -4,16 +4,17 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.equipe01_projeto_ifood.databinding.ActivityDetalhesProdutoBinding
+import java.text.NumberFormat
+import java.util.Locale
 
 class DetalhesProdutoActivity : AppCompatActivity() {
 
     private val binding by lazy {
         ActivityDetalhesProdutoBinding.inflate(layoutInflater) }
 
-
+    private var valorProdutoPedido = 20.0
     private var qtdProdutosPedidos = 1
-
-
+    private var valorOpcionais = 0.0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,6 +22,7 @@ class DetalhesProdutoActivity : AppCompatActivity() {
 
         configurarRecyclerView()
         configurarBotoes()
+        atualizarTotal()
     }
 
     private fun configurarRecyclerView() {
@@ -53,4 +55,16 @@ class DetalhesProdutoActivity : AppCompatActivity() {
             }
         }
     }
+
+    private fun atualizarTotal() {
+        val total = (valorProdutoPedido * qtdProdutosPedidos) + valorOpcionais
+        binding.textViewValorTotalDoPedido.text = formatarMoeda(total)
+    }
+
+    private fun formatarMoeda(valor: Double): String {
+        val locale = Locale.forLanguageTag("pt-BR")
+        val formato = NumberFormat.getCurrencyInstance(locale)
+        return formato.format(valor)
+    }
+
 }
