@@ -12,10 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Equipe01ProjetoIfood" >
         <activity
-            android:name=".DetalhesProdutoActivity"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".DetalhesProdutoActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
