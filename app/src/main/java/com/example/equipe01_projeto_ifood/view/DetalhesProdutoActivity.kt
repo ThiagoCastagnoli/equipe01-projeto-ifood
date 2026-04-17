@@ -45,7 +45,10 @@ class DetalhesProdutoActivity : AppCompatActivity() {
             Opcional("Água", "Incremente seu lanche com esse sabor", 5.0, R.drawable.agua1, 0)
         )
 
-        val adapter = OpcionalDePedidoAdapter(listaOpcionais) {}
+        val adapter = OpcionalDePedidoAdapter(listaOpcionais) { opcional, delta ->
+            valorOpcionais += opcional.valor * delta
+            atualizarTotal()
+        }
         binding.recyclerViewOpcionais.layoutManager = LinearLayoutManager(this)
         binding.recyclerViewOpcionais.adapter = adapter
     }
