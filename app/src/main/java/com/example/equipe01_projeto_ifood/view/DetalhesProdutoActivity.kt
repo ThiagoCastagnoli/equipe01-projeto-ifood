@@ -58,12 +58,14 @@ class DetalhesProdutoActivity : AppCompatActivity() {
         binding.imageViewAdicionarProduto.setOnClickListener {
             qtdProdutosPedidos++
             binding.textViewQtdProdutosPedidos.text = qtdProdutosPedidos.toString()
+            atualizarTotal()
         }
 
         binding.imageViewMenosProdutos.setOnClickListener {
             if (qtdProdutosPedidos > 1) {
                 qtdProdutosPedidos--
                 binding.textViewQtdProdutosPedidos.text = qtdProdutosPedidos.toString()
+                atualizarTotal()
             }
         }
 
