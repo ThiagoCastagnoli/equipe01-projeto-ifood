@@ -1,10 +1,8 @@
-package com.example.equipe01_projeto_ifood
+package com.example.equipe01_projeto_ifood.view
 
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import com.example.equipe01_projeto_ifood.R
 
 class ConfirmacaoPedidoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

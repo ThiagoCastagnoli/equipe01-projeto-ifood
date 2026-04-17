@@ -1,12 +1,14 @@
-package com.example.equipe01_projeto_ifood
+package com.example.equipe01_projeto_ifood.view
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.equipe01_projeto_ifood.R
 import com.example.equipe01_projeto_ifood.databinding.ActivityDetalhesProdutoBinding
-import java.text.NumberFormat
-import java.util.Locale
+import com.example.equipe01_projeto_ifood.model.Opcional
+import com.example.equipe01_projeto_ifood.utils.formatarMoeda
+import com.example.equipe01_projeto_ifood.adapter.OpcionalDePedidoAdapter
 
 class DetalhesProdutoActivity : AppCompatActivity() {
 
@@ -28,13 +30,19 @@ class DetalhesProdutoActivity : AppCompatActivity() {
 
     private fun configurarRecyclerView() {
         val listaOpcionais = listOf(
-            Opcional("Picles","teste",10.0,R.drawable.picles,0),
-            Opcional("Queijo","Incremente seu lanche com esse sabor",5.0,R.drawable.queijo,0),
-            Opcional("Onion rings","Experimente",18.0,R.drawable.onion_rings,0),
+            Opcional("Picles", "teste", 10.0, R.drawable.picles, 0),
+            Opcional("Queijo", "Incremente seu lanche com esse sabor", 5.0, R.drawable.queijo, 0),
+            Opcional("Onion rings", "Experimente", 18.0, R.drawable.onion_rings, 0),
             Opcional("Suco de morango", "É uma delícia", 12.0, R.drawable.suco_morango, 0),
-            Opcional("Batata frita","Incremente seu lanche com esse sabor",5.0,R.drawable.batata_frita1,0),
-            Opcional("Refri","Refrescante",9.0,R.drawable.refri1,0),
-            Opcional("Água","Incremente seu lanche com esse sabor",5.0,R.drawable.agua1,0)
+            Opcional(
+                "Batata frita",
+                "Incremente seu lanche com esse sabor",
+                5.0,
+                R.drawable.batata_frita1,
+                0
+            ),
+            Opcional("Refri", "Refrescante", 9.0, R.drawable.refri1, 0),
+            Opcional("Água", "Incremente seu lanche com esse sabor", 5.0, R.drawable.agua1, 0)
         )
 
         val adapter = OpcionalDePedidoAdapter(listaOpcionais) {}
@@ -68,11 +76,4 @@ class DetalhesProdutoActivity : AppCompatActivity() {
         val total = (valorProdutoPedido * qtdProdutosPedidos) + valorOpcionais
         binding.textViewValorTotalDoPedido.text = formatarMoeda(total)
     }
-
-    private fun formatarMoeda(valor: Double): String {
-        val locale = Locale.forLanguageTag("pt-BR")
-        val formato = NumberFormat.getCurrencyInstance(locale)
-        return formato.format(valor)
-    }
-
 }
