@@ -1,5 +1,6 @@
 package com.example.equipe01_projeto_ifood
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -54,6 +55,13 @@ class DetalhesProdutoActivity : AppCompatActivity() {
                 binding.textViewQtdProdutosPedidos.text = qtdProdutosPedidos.toString()
             }
         }
+
+        binding.btnConfirmarPedido.setOnClickListener {
+            val intent = Intent(this, ConfirmacaoPedidoActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.btnVoltar.setOnClickListener { finish() }
     }
 
     private fun atualizarTotal() {
