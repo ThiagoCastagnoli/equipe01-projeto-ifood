@@ -3,14 +3,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="100dp"
-    android:padding="8dp">
+    android:layout_height="wrap_content"
+    android:minHeight="100dp"
+    android:padding="4dp">
 
 
     <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="0dp"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:gravity="center_vertical"
         android:orientation="vertical"
         android:paddingRight="8dp"
@@ -32,7 +33,7 @@
             android:id="@+id/textViewDescricaoOpcional"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="teste" />
+            android:text="Incremente seu lanche com esse sabor" />
 
         <TextView
             android:id="@+id/textViewValorOpcional"
@@ -48,26 +49,26 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.43" />
+        app:layout_constraintGuide_percent="0.55" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.74" />
+        app:layout_constraintGuide_percent="0.77" />
 
     <ImageView
         android:id="@+id/imageViewOpcional"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginTop="4dp"
         android:layout_marginBottom="4dp"
+        android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.5"
         app:srcCompat="@drawable/picles" />
 
     <ImageView
