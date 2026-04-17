@@ -10,12 +10,17 @@ class DetalhesProdutoActivity : AppCompatActivity() {
     private val binding by lazy {
         ActivityDetalhesProdutoBinding.inflate(layoutInflater) }
 
+
+    private var qtdProdutosPedidos = 1
+
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
         configurarRecyclerView()
-
+        configurarBotoes()
     }
 
     private fun configurarRecyclerView() {
@@ -32,5 +37,20 @@ class DetalhesProdutoActivity : AppCompatActivity() {
         val adapter = OpcionalDePedidoAdapter(listaOpcionais) {}
         binding.recyclerViewOpcionais.layoutManager = LinearLayoutManager(this)
         binding.recyclerViewOpcionais.adapter = adapter
+    }
+
+    private fun configurarBotoes() {
+
+        binding.imageViewAdicionarProduto.setOnClickListener {
+            qtdProdutosPedidos++
+            binding.textViewQtdProdutosPedidos.text = qtdProdutosPedidos.toString()
+        }
+
+        binding.imageViewMenosProdutos.setOnClickListener {
+            if (qtdProdutosPedidos > 1) {
+                qtdProdutosPedidos--
+                binding.textViewQtdProdutosPedidos.text = qtdProdutosPedidos.toString()
+            }
+        }
     }
 }
