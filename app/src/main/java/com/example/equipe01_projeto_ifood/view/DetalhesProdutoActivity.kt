@@ -78,7 +78,8 @@ class DetalhesProdutoActivity : AppCompatActivity() {
     }
 
     private fun atualizarTotal() {
-        val total = (valorProdutoPedido * qtdProdutosPedidos) + valorOpcionais
+        //val total = (valorProdutoPedido * qtdProdutosPedidos) + valorOpcionais
+        val total = (valorProdutoPedido + valorOpcionais) * qtdProdutosPedidos
         binding.textViewValorTotalDoPedido.text = formatarMoeda(total)
     }
 }
