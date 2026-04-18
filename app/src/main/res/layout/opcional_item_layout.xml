@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
         android:orientation="vertical"
-        android:paddingRight="8dp"
+        android:paddingEnd="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,13 +33,13 @@
             android:id="@+id/textViewDescricaoOpcional"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Incremente seu lanche com esse sabor" />
+            tools:text="Incremente seu lanche com esse sabor" />
 
         <TextView
             android:id="@+id/textViewValorOpcional"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="R$ 10,00"
+            tools:text="R$ 10,00"
             android:textSize="16sp"
             android:textStyle="bold" />
     </LinearLayout>
@@ -87,7 +87,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
-        android:text="0"
+        tools:text="0"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imageViewAddOpcional"
