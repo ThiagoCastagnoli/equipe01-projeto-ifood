@@ -1,10 +1,11 @@
-package com.example.equipe01_projeto_ifood
+package com.example.equipe01_projeto_ifood.Adapters
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.equipe01_projeto_ifood.R
 
 data class BannerAdapter(private val listaBanners: List<Int>) :
     RecyclerView.Adapter<BannerAdapter.BannerViewHolder>() {

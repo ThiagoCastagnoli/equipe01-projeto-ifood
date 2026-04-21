@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.example.equipe01_projeto_ifood.FragmentLogin"
+        android:name="com.example.equipe01_projeto_ifood.Fragments.FragmentLogin"
         android:label="FragmentLogin"
         tools:layout="@layout/login_fragment">
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/fragmentHomePage"
-        android:name="com.example.equipe01_projeto_ifood.FragmentHomePage"
+        android:name="com.example.equipe01_projeto_ifood.Fragments.FragmentHomePage"
         android:label="FragmentHomePage"
         tools:layout="@layout/homepage_fragment"/>
 
