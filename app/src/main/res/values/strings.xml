@@ -1,3 +1,35 @@
 <resources>
     <string name="app_name">Equipe01-Projeto-Ifood</string>
+
+    <string name="opcional_picles">Picles</string>
+    <string name="opcional_queijo">Queijo</string>
+    <string name="opcional_onion_rings">Onion rings</string>
+    <string name="opcional_suco_de_morango">Suco de morango</string>
+    <string name="opcional_batata_frita">Batata frita</string>
+    <string name="opcional_refri">Refri</string>
+    <string name="opcional_agua">Água</string>
+
+    <string name="nome_combo">Combo Hamburger + Batata + MilkShake</string>
+    <string name="descricao_combo">
+    Combo completo para animar seu final de semana
+    </string>
+    <string name="titulo_opcionais">Escolha opcionais</string>
+    <string name="descricao_opcionais">
+    Selecione opcionais abaixo para complementar
+    </string>
+    <string name="botao_confirmar">Confirmar</string>
+
+    <string name="btn_confirmar_pedido">Confirmar</string>
+    <string name="btn_voltar">Voltar</string>
+    <string name="btn_adicionar_produto">+</string>
+    <string name="btn_remover_produto">-</string>
+
+
+
+
+
+
+
+
+
 </resources>
