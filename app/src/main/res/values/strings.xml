@@ -24,11 +24,27 @@
     <string name="btn_adicionar_produto">+</string>
     <string name="btn_remover_produto">-</string>
 
+    <string name="descricao_tela_confirmacao_pedido"> Confirmação do Pedido </string>
+    <string name="titulo_itens_adicionados"> Itens Adicionados </string>
+    <string name="nome_itens"> Combo da Casa </string>
+    <string name="descricao_itens"> Combo completo com hamburguer + batata frita + milk shake </string>
+    <string name="valor_itens"> R$ 89,90 </string>
+    <string name="titulo_endereco"> Entregar no endereço </string>
+    <string name="descricao_endereco"> Avenida Android, 2010, Centro </string>
+    <string name="titulo_pagamento"> Pagamento </string>
+    <string name="opcao_pagamento"> Cartão de Crédito</string>
+    <string name="titulo_observacoes"> Observações de entrega</string>
+    <string name="titulo_resumo_valores">Resumo dos valores</string>
+    <string name="titulo_subtotal"> Subtotal </string>
+    <string name="titulo_taxa_entrega"> Taxa de entrega </string>
+    <string name="titulo_valor_total"> Total </string>
+    <string name="valor_subtotal"> R$ 89,90 </string>
+    <string name="valor_taxa_entrega"> R$ 10,00 </string>
+    <string name="valor_total"> R$ 99,90 </string>
 
 
-
-
-
+    <string name="btn_adicionar_pagamento">Adicionar</string>
+    <string name="btn_confirmar_pedido_final">Confirmar Pedido</string>
 
 
 
