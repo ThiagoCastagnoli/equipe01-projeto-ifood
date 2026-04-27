@@ -5,13 +5,16 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".DetalhesRestaurantes">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/img_detalhesRestaurantes"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:scaleType="fitCenter"
+        android:clickable="true"
+        android:focusable="true"
+        android:contentDescription="@null"
         app:srcCompat="@drawable/background"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -27,6 +30,7 @@
         android:backgroundTint="#CFF2F1F1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="Voltar"
         app:srcCompat="@drawable/outline_arrow_back_ios_24" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
