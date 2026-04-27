@@ -11,7 +11,6 @@ import com.example.equipe01_projeto_ifood.R
 class ConfirmacaoPedidoActivity : AppCompatActivity() {
 
     private lateinit var btnVoltar: ImageButton
-    private lateinit var btnConfirmacaoPedidoFinal: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
