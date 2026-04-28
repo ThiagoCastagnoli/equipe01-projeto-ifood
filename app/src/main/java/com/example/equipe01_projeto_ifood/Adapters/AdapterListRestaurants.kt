@@ -14,6 +14,7 @@ class AdapterListRestaurants( private val lista: List<Lojas> ):
         RecyclerView.Adapter<AdapterListRestaurants.ViewHolder>() {
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
+
         val nomeLoja = view.findViewById<TextView>(R.id.txtNomeLoja)
         val avalaicao = view.findViewById<TextView>(R.id.txtAvaliacaoLoja)
         val taxa = view.findViewById<TextView>(R.id.txtEntregaloja)

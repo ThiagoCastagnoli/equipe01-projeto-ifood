@@ -101,7 +101,10 @@ class FragmentHomePage: Fragment(R.layout.homepage_fragment){
         recyclerLojas.adapter = AdapterListRestaurants(listaLojas)
         binding.recyclerviewLojas.isNestedScrollingEnabled = false
 
+
     }
+
+
 
     override fun onDestroyView() {
         super.onDestroyView()
