@@ -1,3 +1,51 @@
 <resources>
     <string name="app_name">Equipe01-Projeto-Ifood</string>
+
+    <string name="opcional_picles">Picles</string>
+    <string name="opcional_queijo">Queijo</string>
+    <string name="opcional_onion_rings">Onion rings</string>
+    <string name="opcional_suco_de_morango">Suco de morango</string>
+    <string name="opcional_batata_frita">Batata frita</string>
+    <string name="opcional_refri">Refri</string>
+    <string name="opcional_agua">Água</string>
+
+    <string name="nome_combo">Combo Hamburger + Batata + MilkShake</string>
+    <string name="descricao_combo">
+    Combo completo para animar seu final de semana
+    </string>
+    <string name="titulo_opcionais">Escolha opcionais</string>
+    <string name="descricao_opcionais">
+    Selecione opcionais abaixo para complementar
+    </string>
+    <string name="botao_confirmar">Confirmar</string>
+
+    <string name="btn_confirmar_pedido">Confirmar</string>
+    <string name="btn_voltar">Voltar</string>
+    <string name="btn_adicionar_produto">+</string>
+    <string name="btn_remover_produto">-</string>
+
+    <string name="descricao_tela_confirmacao_pedido"> Confirmação do Pedido </string>
+    <string name="titulo_itens_adicionados"> Itens Adicionados </string>
+    <string name="nome_itens"> Combo da Casa </string>
+    <string name="descricao_itens"> Combo completo com hamburguer + batata frita + milk shake </string>
+    <string name="valor_itens"> R$ 89,90 </string>
+    <string name="titulo_endereco"> Entregar no endereço </string>
+    <string name="descricao_endereco"> Avenida Android, 2010, Centro </string>
+    <string name="titulo_pagamento"> Pagamento </string>
+    <string name="opcao_pagamento"> Cartão de Crédito</string>
+    <string name="titulo_observacoes"> Observações de entrega</string>
+    <string name="titulo_resumo_valores">Resumo dos valores</string>
+    <string name="titulo_subtotal"> Subtotal </string>
+    <string name="titulo_taxa_entrega"> Taxa de entrega </string>
+    <string name="titulo_valor_total"> Total </string>
+    <string name="valor_subtotal"> R$ 89,90 </string>
+    <string name="valor_taxa_entrega"> R$ 10,00 </string>
+    <string name="valor_total"> R$ 99,90 </string>
+
+
+    <string name="btn_adicionar_pagamento">Adicionar</string>
+    <string name="btn_confirmar_pedido_final">Confirmar Pedido</string>
+
+
+
 </resources>
