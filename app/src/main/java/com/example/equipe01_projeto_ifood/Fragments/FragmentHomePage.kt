@@ -9,9 +9,9 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.equipe01_projeto_ifood.Adapters.AdapterListRestaurants
-import com.example.equipe01_projeto_ifood.Adapters.AdapterRestaurants
-import com.example.equipe01_projeto_ifood.Adapters.BannerAdapter
+import com.example.equipe01_projeto_ifood.adapter.AdapterListRestaurants
+import com.example.equipe01_projeto_ifood.adapter.AdapterRestaurants
+import com.example.equipe01_projeto_ifood.adapter.BannerAdapter
 import com.example.equipe01_projeto_ifood.model.Categorias
 import com.example.equipe01_projeto_ifood.R
 import com.example.equipe01_projeto_ifood.databinding.HomepageFragmentBinding
@@ -24,6 +24,7 @@ class FragmentHomePage: Fragment(R.layout.homepage_fragment){
     private var currentPage = 0
 
     private val bannerRunnable = object : Runnable {
+
         override fun run() {
             if (_binding == null) return
 
@@ -100,6 +101,7 @@ class FragmentHomePage: Fragment(R.layout.homepage_fragment){
         recyclerLojas.layoutManager = LinearLayoutManager(view.context)
         recyclerLojas.adapter = AdapterListRestaurants(listaLojas)
         binding.recyclerviewLojas.isNestedScrollingEnabled = false
+
 
 
     }

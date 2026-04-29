@@ -1,4 +1,4 @@
-package com.example.equipe01_projeto_ifood.Adapters
+package com.example.equipe01_projeto_ifood.adapter
 
 import android.view.LayoutInflater
 import android.view.View
