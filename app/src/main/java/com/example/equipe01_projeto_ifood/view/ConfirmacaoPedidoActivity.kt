@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
-import com.example.equipe01_projeto_ifood.DetalhesRestaurantes
+import com.example.equipe01_projeto_ifood.view.DetalhesRestaurantesActivity
 import com.example.equipe01_projeto_ifood.R
 
 class ConfirmacaoPedidoActivity : AppCompatActivity() {
@@ -23,7 +23,7 @@ class ConfirmacaoPedidoActivity : AppCompatActivity() {
         val button = findViewById<Button>(R.id.btn_confirmar_pedido_final)
 
         button.setOnClickListener {
-            val intent = Intent(this, DetalhesRestaurantes::class.java)
+            val intent = Intent(this, DetalhesRestaurantesActivity::class.java)
             startActivity(intent)
         }
 }

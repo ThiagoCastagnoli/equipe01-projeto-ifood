@@ -13,7 +13,7 @@
         android:theme="@style/Theme.Equipe01ProjetoIfood">
 
         <activity
-            android:name=".DetalhesRestaurantes"
+            android:name=".view.DetalhesRestaurantesActivity"
             android:exported="false" />
 
         <activity
