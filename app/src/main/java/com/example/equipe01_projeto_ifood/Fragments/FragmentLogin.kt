@@ -1,12 +1,11 @@
-package com.example.equipe01_projeto_ifood
+package com.example.equipe01_projeto_ifood.Fragments
 
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
-import androidx.activity.enableEdgeToEdge
 import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.FragmentNavigatorExtras
 import androidx.navigation.fragment.findNavController
+import com.example.equipe01_projeto_ifood.R
 
 class FragmentLogin: Fragment(R.layout.login_fragment){
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -28,5 +27,3 @@ class FragmentLogin: Fragment(R.layout.login_fragment){
 
 
 }
-
-

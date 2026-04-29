@@ -1,15 +1,14 @@
-package com.example.equipe01_projeto_ifood
+package com.example.equipe01_projeto_ifood.view
 
+import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.ImageButton
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import android.content.Intent
-import android.view.View
-import com.example.equipe01_projeto_ifood.view.DetalhesProdutoActivity
+import com.example.equipe01_projeto_ifood.R
 
-
-class DetalhesRestaurantes : AppCompatActivity() {
+class DetalhesRestaurantesActivity : AppCompatActivity() {
 
     private lateinit var btnBack: ImageButton
 

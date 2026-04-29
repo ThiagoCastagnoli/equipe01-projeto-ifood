@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    card_view:cardCornerRadius="12dp"
+    card_view:cardElevation="2dp"
+    android:id="@+id/card_loja"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:gravity="center_vertical">
+
+
+        <ImageView
+            android:id="@+id/imgLogoLoja"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="centerCrop"
+            />
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingStart="12dp">
+
+
+            <TextView
+                android:id="@+id/txtNomeLoja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mc Donalds"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"/>
+
+
+            <TextView
+                android:id="@+id/txtAvaliacaoLoja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⭐ 4.1 Restaurante · 1km"
+                android:textSize="13sp"
+                android:textColor="#777777"
+                android:layout_marginTop="2dp"/>
+
+
+            <TextView
+                android:id="@+id/txtEntregaloja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="R$ 9,99"
+                android:textSize="13sp"
+                android:textColor="#777777"
+                android:layout_marginTop="2dp"/>
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/imgFavorito"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+
+            />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
