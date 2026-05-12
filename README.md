@@ -1,95 +1,205 @@
-## 🍔 Projeto iFood - App Android
+# 🍔 iFood Clone - Android App
 
-Aplicação inspirada no iFood desenvolvida em equipe com foco em práticas de Git/GitHub, colaboração e resolução de conflitos em ambiente real de desenvolvimento.
+<p align="center">
+  <img src="https://img.shields.io/badge/Kotlin-Android-purple?style=for-the-badge&logo=kotlin"/>
+  <img src="https://img.shields.io/badge/Platform-Android-green?style=for-the-badge&logo=android"/>
+  <img src="https://img.shields.io/badge/Git-GitHub-orange?style=for-the-badge&logo=github"/>
+  <img src="https://img.shields.io/badge/Status-Concluído-blue?style=for-the-badge"/>
+</p>
 
-## 📱 Sobre o projeto
+---
 
-Este projeto tem como objetivo simular um aplicativo de delivery, contendo:
+# 📱 Sobre o Projeto
 
-Tela de login
-Tela inicial com categorias
-Lista de restaurantes
-Tela de detalhes do restaurante
-Fluxo de pedido
+Aplicação Android inspirada no **iFood**, desenvolvida em equipe com foco em **colaboração real utilizando Git e GitHub**, simulando o fluxo de trabalho utilizado no mercado de desenvolvimento de software.
 
-Mais do que a funcionalidade, o foco principal foi:
+O projeto foi criado não apenas para desenvolver funcionalidades mobile, mas principalmente para praticar:
+- trabalho em equipe
+- versionamento de código
+- fluxo de branches
+- pull requests
+- resolução de conflitos
+- organização de commits
 
-## 👉 trabalho em equipe utilizando Git/GitHub
+---
 
-## 🚀 Tecnologias utilizadas
-Kotlin
-Android Studio
-RecyclerView
-Navigation (Fragment + Activity)
-Git & GitHub
-## 👥 Equipe
+# ✨ Funcionalidades
 
-Eldon Costa (@eacosta1956)
+✔️ Tela de Login  
+✔️ Tela Home com categorias  
+✔️ Listagem de restaurantes  
+✔️ Navegação entre telas  
+✔️ Tela de detalhes do restaurante  
+✔️ Simulação de fluxo de pedidos  
+✔️ Interface inspirada no iFood  
 
-Thiago Castagnoli (@ThiagoCastagnoli)
+---
 
-Raniel Schneider (@ranielschneider)
+# 🚀 Tecnologias Utilizadas
 
-Matheus Ceolin (@MatheusCeolin)
+- Kotlin
+- Android Studio
+- RecyclerView
+- Fragments & Activities
+- Navigation Components
+- XML
+- Material Design
+- Git
+- GitHub
 
-Professor responsável: **Jamilton Damasceno**
+---
 
-## 🔧 Foco do projeto
+# 👥 Equipe de Desenvolvimento
 
-Este projeto foi desenvolvido com foco em:
+| Desenvolvedor | GitHub |
+|---|---|
+| Eldon Costa | [@eacosta1956](https://github.com/eacosta1956) |
+| Thiago Castagnoli | [@ThiagoCastagnoli](https://github.com/ThiagoCastagnoli) |
+| Raniel Schneider | [@ranielschneider](https://github.com/ranielschneider) |
+| Matheus Ceolin | [@MatheusCeolin](https://github.com/MatheusCeolin) |
 
-Versionamento de código com Git
-Uso de branches (feature, main)
-Abertura de Pull Requests
-Code review entre equipe
-Resolução de conflitos de merge
-Padronização de commits (Conventional Commits)
-## ⚔️ Aprendizados
+### 👨‍🏫 Professor Responsável
+**Jamilton Damasceno**
 
-Durante o desenvolvimento, foram trabalhados:
+---
 
-Como evitar conflitos em equipe
-Como resolver conflitos manualmente
-Organização de commits semânticos
-Estruturação de código em grupo
-Comunicação entre desenvolvedores
+# 🔧 Foco Principal do Projeto
 
-## 📂 Estrutura do projeto
+Este projeto foi desenvolvido com foco em práticas modernas de desenvolvimento em equipe:
 
-app/
- 
- ├─ adapters/
- 
- ├─ fragments/
+- 🌱 Versionamento com Git
+- 🌿 Utilização de branches
+- 🔀 Pull Requests
+- 👨‍💻 Code Review
+- ⚔️ Resolução de conflitos de merge
+- 📝 Conventional Commits
+- 🤝 Colaboração entre desenvolvedores
 
- ├─ activities/
- 
- ├─ model/
- 
- └─ view/
-## 🔄 Fluxo de trabalho (Git)
-Criação de branch para cada feature
-Desenvolvimento isolado
-Commit semântico
+---
+
+# ⚔️ Aprendizados
+
+Durante o desenvolvimento do projeto foram aplicados conceitos importantes do ambiente profissional:
+
+- Como evitar conflitos entre branches
+- Como resolver conflitos manualmente
+- Organização de código em equipe
+- Estruturação de commits semânticos
+- Comunicação entre desenvolvedores
+- Fluxo de desenvolvimento colaborativo
+
+---
+
+# 🔄 Fluxo de Trabalho (Git Flow)
+
+```bash
+Feature Branch
+    ↓
+Desenvolvimento Individual
+    ↓
+Commit Semântico
+    ↓
 Pull Request
-Code review
-Merge na branch principal
+    ↓
+Code Review
+    ↓
+Merge na Main
+```
 
-## PRINTS: 
+---
 
-TELA FEITA POR: Thiago Castagnoli (@ThiagoCastagnoli)
+# 📂 Estrutura do Projeto
 
-<img width="720" height="1520" alt="Image" src="https://github.com/user-attachments/assets/3305bf96-52fa-4a40-938e-0d4c7c312100" />
+```bash
+app/
+ ├── adapters/
+ ├── fragments/
+ ├── activities/
+ ├── model/
+ ├── view/
+ └── resources/
+```
 
-TELA FEITA POR: Thiago Castagnoli (@ThiagoCastagnoli)
-<img width="720" height="1520" alt="Screenshot_20260429-192140" src="https://github.com/user-attachments/assets/d72f3356-b347-4aa8-8518-50f345d9694f" />
-TELA FEITA POR: Raniel Schneider (@ranielschneider)
-<img width="720" height="1520" alt="Screenshot_20260429-192151" src="https://github.com/user-attachments/assets/bf3b5ca6-4167-4a0c-9ea8-9c9a27dca29f" />
-TELA FEITA POR: Eldon Costa (@eacosta1956)
-<img width="720" height="1520" alt="Screenshot_20260429-192157" src="https://github.com/user-attachments/assets/df2c21ca-0db1-41e1-b5e0-1d5dfd2933bc" />
-TELA FEITA POR: Matheus Ceolin (@MatheusCeolin)
-<img width="720" height="1520" alt="Screenshot_20260429-192201" src="https://github.com/user-attachments/assets/e2a3999b-de59-4ca0-a220-31968719ada1" />
+---
 
+# 📸 Preview do Projeto
 
+## 🖥️ Tela de Login
+**Desenvolvido por:** Thiago Castagnoli
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/3305bf96-52fa-4a40-938e-0d4c7c312100" width="240"/>
+</p>
+
+---
+
+## 🏠 Tela Home
+**Desenvolvido por:** Thiago Castagnoli
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/d72f3356-b347-4aa8-8518-50f345d9694f" width="240"/>
+</p>
+
+---
+
+## 🍽️ Tela Restaurante
+**Desenvolvido por:** Raniel Schneider
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/bf3b5ca6-4167-4a0c-9ea8-9c9a27dca29f" width="240"/>
+</p>
+
+---
+
+## 🛒 Tela Pedido
+**Desenvolvido por:** Eldon Costa
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/df2c21ca-0db1-41e1-b5e0-1d5dfd2933bc" width="240"/>
+</p>
+
+---
+
+## 📋 Tela Detalhes
+**Desenvolvido por:** Matheus Ceolin
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/e2a3999b-de59-4ca0-a220-31968719ada1" width="240"/>
+</p>
+
+---
+
+# 🎯 Objetivo
+
+O principal objetivo do projeto foi simular um ambiente real de desenvolvimento Android em equipe, aplicando conceitos utilizados no mercado e fortalecendo habilidades técnicas e colaborativas.
+
+---
+
+# 📈 Evolução
+
+Este projeto representa evolução prática em:
+- desenvolvimento Android
+- arquitetura de aplicações
+- Git/GitHub
+- trabalho em equipe
+- organização de projetos reais
+
+---
+
+# 👨‍💻 Desenvolvedor
+
+### Thiago Castagnoli
+
+<p>
+  <a href="https://github.com/ThiagoCastagnoli">
+    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/>
+  </a>
+
+  <a href="https://www.linkedin.com/in/thiago-castagnoli-200210306/">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
+  </a>
+</p>
+
+---
 
 
